@@ -27,3 +27,23 @@ const obj={
 for(let obj1 in obj){
     console.log(` ${obj1} = ${obj[obj1]}`);
 }
+
+
+// print even number from 0 to 100 
+
+for(let i=0; i<=100; i++){
+    if(i%2==0){
+        console.log(i, "is a even number");
+    };
+    
+}
+
+
+// print odd number from 0 to 100 
+
+for(let i=0; i<=100; i++){
+    if(i % 2 !==0){
+        console.log(i, "is a odd number");
+    };
+    
+}
