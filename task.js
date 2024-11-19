@@ -22,9 +22,9 @@ console.log(profile);
 // get user to input a number using prompt("Enter a number:"). Check if the number is multiple of  5 or not?
 
 const userInput= prompt("Enter a number:");
-console.log(userInput);
+
 if(userInput % 5 == 0){
-    console.log(true);
+    console.log(userInput,"is a multiple of 5");
 }else{
-    console.log(false);
+    console.log(userInput,"is not a multiple of 5");
 };
