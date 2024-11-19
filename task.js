@@ -28,3 +28,18 @@ if(userInput % 5 == 0){
 }else{
     console.log(userInput,"is not a multiple of 5");
 };
+
+// write a code which can gives a grade to student according to theirs score
+
+const score= prompt("Enter your score");
+if(score >= 90 && score <= 100){
+    console.log("Your grade is A");
+}else if(score >= 70 && score <= 89){
+    console.log("Your grade is B");
+}else if(score >= 60 && score <= 69){
+    console.log("Your grade is C");
+}else if(score >= 50 && score <= 59){
+    console.log("Your grade is D");
+}else if(score >= 0 && score <= 49){
+    console.log("Your grade is F");
+};
