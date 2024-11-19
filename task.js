@@ -43,3 +43,10 @@ if(score >= 90 && score <= 100){
 }else if(score >= 0 && score <= 49){
     console.log("Your grade is F");
 };
+
+// calculate sum of 1 to 10 by using  for loop
+let sum = 0;
+for(let i=1; i<=10; i++){
+    sum+=i;
+};
+console.log("The total sum is", sum);
