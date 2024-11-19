@@ -1,4 +1,4 @@
-// create a object to store cards values 
+// practice question 1
 let product = {
     tittle: "Ball Pen",
     rating: 4,  
@@ -7,3 +7,11 @@ let product = {
 
 };
 console.log(product);
+// practice question 2
+let profile = {
+username: "Nouman",
+isFollow: false,
+followers: 125,
+following: 200
+};
+console.log(profile);
