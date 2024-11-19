@@ -47,3 +47,16 @@ for(let i=0; i<=100; i++){
     };
     
 }
+
+// create a game where you start with any random game number. Ask user to keep guessing the game number until the user enters correct
+function guessNum(){
+    const gameNum=11;
+    let userNum= prompt("write any num to guess the game num");
+    while(gameNum!= userNum){
+        userNum= prompt(" Please write correct num to guess the game num");
+    }
+       console.log("Your guess is write the Num is" , gameNum);
+    
+
+}
+guessNum();
