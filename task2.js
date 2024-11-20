@@ -98,10 +98,28 @@ console.log(text.toUpperCase());
 
 console.log(text.toLowerCase());
 
-//trim method in js
+//trim method in js removes the white spaces from string
 const text2= "    Hi how are you     ";
 
 console.log(text2.trim());
 console.log(text2.trimStart());
 console.log(text2.trimEnd());
+
+// slice method in js for string 
+
+const text3= "I am 20 years old";
+console.log(text3.slice(5,9));
+
+// concat method 
+const text4= "My name is ali and";
+console.log(text4.concat("\tI am 20 years old"));
+
+// replace method in js 
+const text5= "ABCDEFGEEE";
+console.log(text5.replace("E","e"));
+console.log(text5.replaceAll("E","e"));
+
+// charat method 
+
+ console.log(text5.charAt(4));
 
