@@ -65,3 +65,8 @@ guessNum();
 
 let string="hello world!";
 console.log(string.length);
+
+// access the value of a string by using index
+
+let value = "apna college";
+console.log(value[9]);
