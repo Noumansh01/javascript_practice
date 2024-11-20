@@ -149,3 +149,8 @@ if(num%2===0){
 }else{
     console.log("the num is odd");
 };
+
+// ternary operator
+
+let myage=10;
+myage >= 18 ? console.log("you are adult") : console.log("you are not adult");
