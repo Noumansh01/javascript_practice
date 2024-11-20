@@ -84,3 +84,33 @@ let dcHeroes=["superman","batman"];
     // shift method remove value from start of array 
     const shiftmethod=dcHeroes.shift();
     console.log(shiftmethod);
+
+// slice and splice array method 
+
+const arr2= [1,2,3,4,5]
+// slice method 
+console.log(arr2.slice(1,3));
+
+// splice method this method change original array and it take 3 arg 1 startindex 2 to del index 
+// 3 value which will be rewrite on remove indexes
+const arr3= [1,2,3,4,5,6,7,8]
+    arr3.splice(4,2,108,109);
+console.log(arr3);
+
+// create an array  to store company "bloomberg","microsoft", "uber","google","ibm","netflix"
+
+let companyies=["bloomberg","microsoft", "uber","google","ibm","netflix"];
+
+// task 1  remove the first company from array
+               companyies.shift()
+     console.log(companyies);
+
+// task 2 remove uber and add ola in its place
+companyies.splice(2,1,"ola");
+console.log(companyies);
+
+
+// task 3 add amazon at the end
+
+       companyies.push("amazon");
+       console.log(companyies);
