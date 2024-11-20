@@ -2,11 +2,11 @@
 // followed by their full name and ending with the full name length.
 // e.g username = "NoumanSheikh" username should be "@NoumanSheikh12"
 
-const username= prompt("Enter your username");
-const symbol= "@";
-const userNameLength= username.length;
-const finalUserName= symbol.concat(username).concat(userNameLength);
-console.log(finalUserName);
+// const username= prompt("Enter your username");
+// const symbol= "@";
+// const userNameLength= username.length;
+// const finalUserName= symbol.concat(username).concat(userNameLength);
+// console.log(finalUserName);
 
 
 // arrays in js 
@@ -34,3 +34,16 @@ for(let mark of marks){
     
 }
 console.log(`The average marks is ${sum/markLength}`);
+
+// for a given array  price of five items [250,645,300,900,50] all item have an offer of 10% off on them change the 
+// array to store final price after applying offer.
+
+let itemArray= [250,645,300,900,50];
+for(let i=0; i<itemArray.length; i++){
+    let offer=  itemArray[i] / 10;
+    let finaloffer= itemArray[i] - offer;
+    const result = itemArray[i]=finaloffer;
+    console.log(result);
+}
+
+console.log(itemArray);
