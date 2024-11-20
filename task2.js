@@ -80,3 +80,14 @@ quantity:20
 };
 
 console.log(`This is a ${obj1.item} and the price is ${obj1.price} and the quantity is ${obj1.quantity}`);
+
+// escape characters example
+
+// \n is used to start from next line
+
+console.log("Apna\nCollege");
+
+// \t is used to give space of a tab
+
+console.log("Apna\tCollege");
+
