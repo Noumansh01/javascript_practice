@@ -65,3 +65,22 @@ console.log(foodItems, deletedItem);
 
 const example = [1,2,3,4,5,6,7,8,9,10];
 console.log(example.toString());
+
+// concat method in array this method concat two or more arrays and return new array 
+
+let marvelHeroes=["thor","spiderman","ironman"];
+let dcHeroes=["superman","batman"];
+
+    const res= marvelHeroes.concat(dcHeroes);
+    console.log(res);
+
+    // unshift or shift method in array 
+
+    // unshift method add value in the start of array 
+    const unshiftmethod= marvelHeroes.unshift("antman");
+
+    console.log(marvelHeroes);
+
+    // shift method remove value from start of array 
+    const shiftmethod=dcHeroes.shift();
+    console.log(shiftmethod);
