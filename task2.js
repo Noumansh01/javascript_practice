@@ -60,3 +60,8 @@ function guessNum(){
 
 }
 guessNum();
+
+// check the length of a string 
+
+let string="hello world!";
+console.log(string.length);
