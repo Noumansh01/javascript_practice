@@ -95,5 +95,13 @@ console.log("Apna\tCollege");
 
 const text= "Hi how are you";
 console.log(text.toUpperCase());
+
 console.log(text.toLowerCase());
+
+//trim method in js
+const text2= "    Hi how are you     ";
+
+console.log(text2.trim());
+console.log(text2.trimStart());
+console.log(text2.trimEnd());
 
