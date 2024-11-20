@@ -57,6 +57,11 @@ let foodItems=["potato","litchi","apple","tomato"];
       const len = foodItems.push("chips","burger","paneer");
 console.log(foodItems, len);
 
+// the pop method remove item from last of array and also return the item who has removed
+   const deletedItem=foodItems.pop();
+console.log(foodItems, deletedItem);
 
-foodItems.pop();
-console.log(foodItems);
+// tostring() method converts array into string
+
+const example = [1,2,3,4,5,6,7,8,9,10];
+console.log(example.toString());
