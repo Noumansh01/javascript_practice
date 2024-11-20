@@ -91,3 +91,9 @@ console.log("Apna\nCollege");
 
 console.log("Apna\tCollege");
 
+// string methods 
+
+const text= "Hi how are you";
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
