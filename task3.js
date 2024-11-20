@@ -15,5 +15,11 @@ console.log(finalUserName);
 
 const arr= ["ironman","thor","hulk","shaktiman","spiderman"];
 for(let i=0; i<arr.length; i++){
-    console.log(arr[i]);
+    console.log(arr[i], "by using for loop");
+}
+
+// looping on array by using for of loop 
+
+for(val of arr){
+    console.log(val, "by using for of loop");
 }
