@@ -66,7 +66,17 @@ guessNum();
 let string="hello world!";
 console.log(string.length);
 
-// access the value of a string by using index
+// access the value of a string by using index number
 
 let value = "apna college";
 console.log(value[9]);
+
+// example of template leterals 
+
+const obj1={
+item:"pen",
+price: 10,
+quantity:20
+};
+
+console.log(`This is a ${obj1.item} and the price is ${obj1.price} and the quantity is ${obj1.quantity}`);
