@@ -20,6 +20,17 @@ for(let i=0; i<arr.length; i++){
 
 // looping on array by using for of loop 
 
-for(val of arr){
+for(let val of arr){
     console.log(val, "by using for of loop");
 }
+
+// for a given array with marks of students find the average marks of entire class.
+
+const marks=[85,97,44,37,76,60];
+const markLength= marks.length;
+let sum=0;
+for(let mark of marks){
+    sum+=mark;
+    
+}
+console.log(`The average marks is ${sum/markLength}`);
