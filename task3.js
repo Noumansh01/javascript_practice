@@ -47,3 +47,16 @@ for(let i=0; i<itemArray.length; i++){
 }
 
 console.log(itemArray);
+
+
+// array methods 
+
+let foodItems=["potato","litchi","apple","tomato"];
+
+// the  push method also return the length of array
+      const len = foodItems.push("chips","burger","paneer");
+console.log(foodItems, len);
+
+
+foodItems.pop();
+console.log(foodItems);
