@@ -123,3 +123,29 @@ console.log(text5.replaceAll("E","e"));
 
  console.log(text5.charAt(4));
 
+//  conditional statement
+// check the age of vote
+let age=18;
+if(age>=18){
+    console.log("Yes you can vote");
+}
+
+// check the mode by using conditional statement 
+let mode="white";
+let color;
+if(mode==="dark"){
+    color="black";
+}else{
+    color="white";
+}
+
+console.log(color);
+
+// check the num is even or odd by using conditional statement
+
+let num=10;
+if(num%2===0){
+    console.log("the number is even");
+}else{
+    console.log("the num is odd");
+};
