@@ -7,3 +7,13 @@ const symbol= "@";
 const userNameLength= username.length;
 const finalUserName= symbol.concat(username).concat(userNameLength);
 console.log(finalUserName);
+
+
+// arrays in js 
+
+// looping on array by using for loop 
+
+const arr= ["ironman","thor","hulk","shaktiman","spiderman"];
+for(let i=0; i<arr.length; i++){
+    console.log(arr[i]);
+}
