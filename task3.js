@@ -239,3 +239,33 @@ console.log(companyies);
        },0);
 
        console.log(redRes, "this result is from reduce method");
+
+
+
+    //    find  the largest number in array by using reduce method
+
+
+    const reducearr2=[66,87,90,45,63,23,567];
+
+    let finalres= reducearr2.reduce((prev,cur)=>{
+                   
+        return prev > cur ? prev : cur ;
+    });
+
+    console.log(finalres, " this is largest num from reduce method");
+
+
+    // practice examples of with array method
+
+    // we are given array of marks of students. filter the marks of student that scores 90
+
+    const score=[87,45,67,90,65,34,99,94,95];
+
+        const chkres=score.filter((val)=>{
+        return  val >= 90;
+    })
+   
+        console.log(chkres, "these score are greater");
+
+
+   
