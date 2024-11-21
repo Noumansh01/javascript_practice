@@ -268,4 +268,41 @@ console.log(companyies);
         console.log(chkres, "these score are greater");
 
 
+        // take a number n input from user. create an array of number from 1 to n.
+        // use reduce method to calculate sum of all numbers in the array.
+        // use the reduce method to calculate product of all numbers in the array.
+
+        const numN= prompt("write any number...");
+            
+        let array=[];
+        let count=1;
+
+        function calsum(num){
+                
+
+                for(let i=0; i<=num ; i++){
+                      array.push(count);
+                      count ++;
+                };
+                     
+                console.log(count, array, "check count and array value");
+
+        };
+
+        calsum(numN)
+
+        const chksum= array.reduce((prev,curr)=>{
+              
+            return prev+curr;
+
+        });
+
+        console.log(chksum, "this is the sum of reduce ");
+
+        const factorial= array.reduce((prev,curr)=>{
+                   return prev*curr;
+        });
+        console.log(factorial,"this is a factorial of array");
+
+
    
