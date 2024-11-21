@@ -156,3 +156,37 @@ console.log(companyies);
       };
 
       mul(756,987);
+
+      // create a funtion using "funtion" keyword that takes a string as an argument and returns the number of vowels in the string.
+
+      function checkVowel(string){
+               
+               let count=0;
+        for(let str of string ){
+             if(str==="a" || str==="e" || str==="i" || str==="o" || str==="u"){
+                 count++;
+             }
+        }
+        console.log(count, "this is from named function");
+      }
+
+      checkVowel("apna college");
+
+
+      // create a funtion using " arrow funtion" that takes a string as an argument and returns the number of vowels
+
+
+      const arrowfunc=(string)=>{
+               let count=0;
+ 
+               for(str of string){
+                if(str==="a" || str==="e" || str==="i" || str==="o" || str==="u"){
+                    count++;
+                }
+               }
+                  
+               console.log(count, " from arrow function");
+
+      };
+
+      arrowfunc("how are you ali");
