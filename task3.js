@@ -190,3 +190,12 @@ console.log(companyies);
       };
 
       arrowfunc("how are you ali");
+
+
+      // for a given array of numbers print the square of each value using the forEach loop
+
+      let numArr=[5,8,7,9,4,3,88];
+
+      numArr.forEach((num)=>{
+        console.log(num**2);
+      });
