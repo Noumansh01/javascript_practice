@@ -199,3 +199,15 @@ console.log(companyies);
       numArr.forEach((num)=>{
         console.log(num**2);
       });
+
+
+      // for a given array of numbers return the square of each number by using map method
+      // the map method return new array
+
+       const numArr2= [6,7,8,3,9,1,5,7];
+
+       const finalArr=numArr2.map((num)=>{
+              return num * num;
+       });
+
+       console.log(finalArr);
