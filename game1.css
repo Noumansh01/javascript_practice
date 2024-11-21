@@ -2,4 +2,31 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-};
+    text-align: center;
+}
+h1 {
+    background-color: burlywood;
+    height: 4rem;
+    line-height: 4rem;
+}
+.selection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px; 
+}
+.select{
+    width: 200px;
+    height: 200px;
+}
+.select:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
