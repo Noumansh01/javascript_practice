@@ -211,3 +211,13 @@ console.log(companyies);
        });
 
        console.log(finalArr);
+
+       // filter array method practice example
+
+       const filterExam=[3,5,4,6,8,2,10,24,65,46];
+
+       let filterRes= filterExam.filter((val)=>{
+                
+              return val % 2 ===0;
+       });
+       console.log(filterRes, "this is from filter array");
