@@ -114,3 +114,45 @@ console.log(companyies);
 
        companyies.push("amazon");
        console.log(companyies);
+
+
+       // functions practice start from here 
+
+
+    //    print any message by using parameter in fuction
+
+    function msg(message){
+         console.log(message);
+    }
+
+    msg("I LOVE JAVASCRIPT");
+
+    // write a funtion who calculate the sum of two values and take value from parameter
+
+    function sumnum(num1,num2){
+            console.log(num1+num2);
+    }
+    
+    sumnum(10,37);
+
+
+    // write a funtion who do substraction of two values but it donot print any thing it should return final value
+
+    function sub(num1,num2){
+         const finalValue= num1-num2;
+         return finalValue;
+    }
+
+        let checkVal= sub(456,837);
+      console.log(checkVal);
+
+
+      // write arrow function of multiplication of two numbers
+
+      const mul = (num1,num2)=>{
+
+        console.log(num1*num2);
+
+      };
+
+      mul(756,987);
