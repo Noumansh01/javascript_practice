@@ -7,6 +7,9 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
+
+
+
 for (let select of dropdowns) {
   for (currCode in countryList) {
     let newOption = document.createElement("option");
@@ -22,6 +25,7 @@ for (let select of dropdowns) {
 
   select.addEventListener("change", (evt) => {
     updateFlag(evt.target);
+
   });
 }
 
@@ -33,18 +37,16 @@ const updateExchangeRate = async () => {
     amount.value = "1";
   }
 
-  
-
-    //   let smallfromcurr = fromCurr.value.toLowerCase();
-      let smalltocurr = toCurr.value.toLowerCase();
+  let smallfromcurr = fromCurr.value.toLowerCase();
+  let smalltocurr = toCurr.value.toLowerCase();
     //   console.log(smalltocurr,smallfromcurr);
-    //   const URL = `${BASE_URL}/${smallfromcurr}.json`;
-      let response = await fetch(`${BASE_URL}/${smallfromcurr}.json`);
+      const URL = `${BASE_URL}/${smallfromcurr}.json`;
+      let response = await fetch(URL);
       let data = await response.json();
-      
-          console.log(fromCurr.value.toLowerCase());
-//   let rate = data[toCurr.value.toLowerCase()];
-  let rate = data.toCurr.value.toLowerCase();
+
+
+  let rate = data[smallfromcurr][smalltocurr];
+//   let rate = data.toCurr.value.toLowerCase();
 
   let finalAmount = amtVal * rate;
   msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
