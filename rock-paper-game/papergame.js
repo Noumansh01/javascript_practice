@@ -16,8 +16,7 @@ let compChoice=()=>{
 }
 
 const draw = ()=>{
-    userScore = 0;
-    compScore = 0;
+    
     msg.innerText="Game Draw! Play Again";
     msg.style.backgroundColor="chartreuse";
 };
