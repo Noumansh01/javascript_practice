@@ -6,11 +6,11 @@
 
 
 
-// const username= prompt("Enter your username");
-// const symbol= "@";
-// const userNameLength= username.length;
-// const finalUserName= symbol.concat(username).concat(userNameLength);
-// console.log(finalUserName);
+const username= prompt("Enter your username");
+const symbol= "@";
+const userNameLength= username.length;
+const finalUserName= symbol.concat(username).concat(userNameLength);
+console.log(finalUserName);
 
 
 
