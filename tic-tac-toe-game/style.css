@@ -31,6 +31,7 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     font-size: 25px;
     color: red;
+    background-color: chartreuse;
 }
 button{
     padding: 16px;
@@ -39,4 +40,14 @@ button{
     background-color: black;
     border-radius: 10px;
     border: none;
+}
+#msg{
+    font-size: 21px;
+    color: rgb(16, 194, 16);
+}
+.msg-box{
+    height: 25vmin;
+}
+.hide{
+    display: none;
 }
