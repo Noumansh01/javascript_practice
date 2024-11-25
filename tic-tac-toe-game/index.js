@@ -6,6 +6,7 @@ let new_btn= document.querySelector("#new-btn");
 
 
 let turn0= true;
+let count = 0;
 
 const gameWinPattern=[
     [0,1,2],
@@ -22,7 +23,7 @@ const gameWinPattern=[
 const reset=()=>{
     turn0=true;
     enablebtn();
-    msg_box.style.display="hide";
+    msg_box.classList.add("hide");
 }
 
 boxes.forEach((box)=>{
@@ -30,16 +31,25 @@ box.addEventListener("click", ()=>{
     
     if(turn0){
         box.innerText="O";
+        box.style.color="blue";
         turn0=false;
     }else{
         box.innerText="X";
+        box.style.color="pink";
         turn0=true;
     }
         box.disabled=true;
 
-        
+        count++;
+        if(count===9){
+           checkDraw();
+        }else{
 
-        checkWinner();
+            checkWinner();
+        }
+
+        
+        
 })
 })
 
@@ -56,27 +66,33 @@ for(let box of boxes){
 }
 
 function showWinner(winner){
-    msg_box.style.display="block";
+    msg_box.classList.remove("hide");
     msg.innerText=`${winner} is winner`;
     disablebtn();
+    
 }
 
 function checkWinner(){
     for(let pattern of gameWinPattern){
-      console.log( boxes[pattern[1]], boxes[pattern[2]] );
+    
 
       let pos1=boxes[pattern[0]].innerText;
       let pos2=boxes[pattern[1]].innerText;
       let pos3=boxes[pattern[2]].innerText;
       if(pos1 != "" && pos2 != "" && pos3 != ""){
         if(pos1 === pos2 && pos2 === pos3){
-            console.log("winner", pos1);
+            
             showWinner(pos1);
             
         }
       }
     }
 
+}
+function checkDraw(){
+    msg_box.classList.remove("hide");
+    msg.innerText="Game Draw";
+    disablebtn();
 }
 
 btn.addEventListener("click",reset);
