@@ -16,7 +16,20 @@ const gameWinPattern=[
 ]
 
 boxes.forEach((box)=>{
-box.addEventListener("click", (e)=>{
-    console.log(e);
+box.addEventListener("click", ()=>{
+    
+    if(turn0){
+        box.innerText="O";
+        turn0=false;
+    }else{
+        box.innerText="X";
+        turn0=true;
+    }
+        box.disabled=true;
 })
+})
+
+btn.addEventListener("click",()=>{
+    boxes.innerText="";
+    console.log("click");
 })
